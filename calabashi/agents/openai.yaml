@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calabashi"
+  short_description: "Agent-native architecture governance"
+  default_prompt: "Use $calabashi to design an agent-native product architecture and construction loop."
