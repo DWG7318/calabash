@@ -1,0 +1,4 @@
+interface:
+  display_name: "LE"
+  short_description: "Alias for Loop Engineering"
+  default_prompt: "Use $le as the global alias for $loop-engineering-for-codex."

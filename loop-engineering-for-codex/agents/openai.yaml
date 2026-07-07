@@ -1,0 +1,4 @@
+interface:
+  display_name: "LE - Loop Engineering for Codex"
+  short_description: "LE: supervisor-outside worker loops"
+  default_prompt: "Use $loop-engineering-for-codex, also called LE, to organize a multi-module Codex project into supervisor-outside loops with planner, worker, checker, and router roles."
