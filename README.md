@@ -1,18 +1,16 @@
-# Calabashi
+# Calabash
 
 This repository contains reusable Codex skills for designing, governing, and constructing agent-native product systems.
 
 Included skills:
 
-- `calabashi`: product-first architecture governance for agent-native systems.
+- `calabash`: product-first architecture governance for agent-native systems.
 - `loop-engineering-for-codex`: supervisor-outside loop engineering for large Codex work.
 - `le`: short alias for `loop-engineering-for-codex`.
 
-## Calabashi
+## Calabash
 
-Calabashi keeps the product architecture primary:
-
-It keeps the product architecture primary:
+Calabash keeps the product architecture primary:
 
 ```text
 roles -> entry points -> business journey -> back-office modules
@@ -71,7 +69,7 @@ Copy the desired skill folder into your Codex skills directory, or install from 
 Canonical entry points:
 
 ```text
-calabashi/SKILL.md
+calabash/SKILL.md
 loop-engineering-for-codex/SKILL.md
 le/SKILL.md
 ```
@@ -81,7 +79,7 @@ le/SKILL.md
 Example prompts:
 
 ```text
-Use $calabashi to turn this agent product idea into a product-first architecture,
+Use $calabash to turn this agent product idea into a product-first architecture,
 Calabash governance matrix, and micro-loop construction plan.
 
 Use $le to plan this project as supervisor-outside loop engineering.

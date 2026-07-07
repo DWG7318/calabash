@@ -1,13 +1,13 @@
 ---
-name: calabashi
+name: calabash
 description: Use when designing, restructuring, or governing agent-native product systems; when a user mentions Calabash, ontology, contracts, policy, workflow, action catalogs, adapters, eval/audit, product architecture, or construction loops; or when Agent/LLM/MCP work is drifting away from real product roles, business flows, data, and acceptance evidence.
 ---
 
-# Calabashi
+# Calabash
 
 ## Overview
 
-Calabashi is a product-first governance method for agent-native systems. It keeps the product architecture primary, then uses the Calabash seven layers to define concepts, contracts, permissions, workflows, actions, adapters, and evidence.
+Calabash is a product-first governance method for agent-native systems. It keeps the product architecture primary, then uses the Calabash seven layers to define concepts, contracts, permissions, workflows, actions, adapters, and evidence.
 
 Core rule: **Calabash is not a feature module, not a runtime hub, and not the product story.** It is the design and construction discipline around the product.
 
