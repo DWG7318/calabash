@@ -2,6 +2,22 @@
 
 This repository contains reusable Codex skills for designing, governing, and constructing agent-native product systems.
 
+## Primary Codex Skill
+
+`calabash/` is the primary Codex skill in this repository.
+
+Use it when a Codex thread needs product-first governance for agent-native systems:
+
+- product architecture before agent runtime;
+- ontology, contract, policy, workflow, action catalog, adapter, and eval/audit checks;
+- construction loops with explicit evidence and acceptance criteria.
+
+The skill entry point is:
+
+```text
+calabash/SKILL.md
+```
+
 Included skills:
 
 - `calabash`: product-first architecture governance for agent-native systems.
