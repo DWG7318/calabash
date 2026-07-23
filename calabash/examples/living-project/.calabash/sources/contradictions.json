@@ -1,0 +1,13 @@
+{
+  "contradictions": [
+    {
+      "contradiction_id": "CON-001",
+      "claim_ids": [
+        "CL-002",
+        "CL-003"
+      ],
+      "status": "OPEN",
+      "severity": "HIGH"
+    }
+  ]
+}

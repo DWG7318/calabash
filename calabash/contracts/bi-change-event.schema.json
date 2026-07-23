@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Calabash Change Event",
+  "type": "object",
+  "required": [
+    "event_id",
+    "timestamp",
+    "change_type",
+    "summary",
+    "status",
+    "affected_parts"
+  ],
+  "properties": {
+    "event_id": {"type": "string", "minLength": 1},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "change_type": {
+      "enum": [
+        "BOOTSTRAP", "BI", "SOURCE", "THEME", "QUESTION", "OWNER_DECISION",
+        "BASELINE", "AMENDMENT", "UI_SIGNAL", "WORKFLOW_SIGNAL", "REVIEW",
+        "TRACE", "LOOP_ADOPTION", "RUNTIME"
+      ]
+    },
+    "summary": {"type": "string", "minLength": 1},
+    "reason": {"type": ["string", "null"]},
+    "status": {
+      "enum": [
+        "DRAFT", "OBSERVED", "PROVISIONAL", "EXPERIMENTAL", "ACCEPTED",
+        "BLOCKED", "SUPERSEDED", "REJECTED", "RESOLVED"
+      ]
+    },
+    "affected_parts": {"type": "array", "items": {"type": "string"}},
+    "affected_artifacts": {"type": "array", "items": {"type": "string"}},
+    "impact": {"type": "array", "items": {"type": "string"}},
+    "before_refs": {"type": "array", "items": {"type": "string"}},
+    "after_refs": {"type": "array", "items": {"type": "string"}},
+    "source_refs": {"type": "array", "items": {"type": "string"}},
+    "decision_refs": {"type": "array", "items": {"type": "string"}},
+    "record_ids": {"type": "array", "items": {"type": "string"}},
+    "actor": {"type": ["string", "null"]},
+    "git_commit": {"type": ["string", "null"]},
+    "baseline_version": {"type": ["string", "null"]},
+    "baseline_from": {"type": ["string", "null"]},
+    "baseline_to": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

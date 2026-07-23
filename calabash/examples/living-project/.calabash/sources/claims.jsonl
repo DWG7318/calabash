@@ -1,0 +1,3 @@
+{"claim_id": "CL-001", "type": "normative", "text": "Owner retains final approval", "status": "DECIDED", "source_ids": ["SRC-001"]}
+{"claim_id": "CL-002", "type": "descriptive", "text": "First-time users need guidance", "status": "SUPPORTED", "source_ids": ["SRC-002"]}
+{"claim_id": "CL-003", "type": "normative", "text": "Old workflow assumes no fallback", "status": "CONTRADICTED", "source_ids": ["SRC-003"]}

@@ -1,0 +1,19 @@
+{
+  "review_id": "REV-XXX",
+  "baseline_id": "",
+  "baseline_version": "",
+  "type": "HEALTH",
+  "trigger": "",
+  "reviewed_at": "2026-01-01T00:00:00Z",
+  "scope": [],
+  "sources_rechecked": [],
+  "themes_reviewed": [],
+  "ui_signals": [],
+  "workflow_signals": [],
+  "contradictions": [],
+  "trace_impact": [],
+  "verdict": "UNCHANGED",
+  "actions": [],
+  "next_review_due": "2026-02-01",
+  "git_commit": null
+}

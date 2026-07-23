@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source Preparation Pass",
+  "type": "object",
+  "required": [
+    "receipt_id",
+    "scope_covered",
+    "source_count",
+    "verified_source_count",
+    "contradiction_count",
+    "blocking_contradiction_ids",
+    "known_unknown_ids",
+    "prepared_at",
+    "receipt_hash"
+  ],
+  "properties": {
+    "receipt_id": {
+      "type": "string"
+    },
+    "scope_covered": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "verified_source_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "unverified_source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contradiction_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "blocking_contradiction_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "known_unknown_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claim_coverage_summary": {
+      "type": "object"
+    },
+    "prepared_by": {
+      "type": "string"
+    },
+    "prepared_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "receipt_hash": {
+      "type": "string",
+      "minLength": 8
+    }
+  },
+  "additionalProperties": true
+}

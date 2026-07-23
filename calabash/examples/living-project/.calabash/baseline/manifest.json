@@ -1,0 +1,58 @@
+{
+  "baseline_id": "demo-product",
+  "mode": "MINIMUM",
+  "version": "1.2.0",
+  "hash": "sha256:demo12345678",
+  "git_commit": "abcdef1234567",
+  "git_tag": "calabash/demo-product/v1.2.0",
+  "status": "FROZEN",
+  "grandpa": {
+    "purpose": "Help a user complete one reliable product journey"
+  },
+  "product_architecture": {
+    "roles": [
+      "Owner",
+      "End User"
+    ],
+    "journeys": [
+      "Create",
+      "Review",
+      "Complete"
+    ]
+  },
+  "ontology": {
+    "concepts": [
+      "User",
+      "Project",
+      "Result"
+    ]
+  },
+  "known_gaps": [
+    "Formal policy layer not yet frozen"
+  ],
+  "upgrade_triggers": [
+    "External side effects become material"
+  ],
+  "review_policy": {
+    "next_review_due": "2026-08-15",
+    "event_triggers": [
+      "material UI drift",
+      "workflow tool change"
+    ]
+  },
+  "living_tracks": {
+    "ui": {
+      "status": "MONITORING",
+      "last_observed_at": "2026-07-20"
+    },
+    "workflow": {
+      "status": "MONITORING",
+      "last_observed_at": "2026-07-18"
+    }
+  },
+  "source_snapshot": [
+    "SRC-001",
+    "SRC-002"
+  ],
+  "decision_ledger_head": "DEC-002"
+}

@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Calabash BI Bootstrap Receipt",
+  "type": "object",
+  "required": [
+    "bootstrap_id",
+    "project_name",
+    "project_root",
+    "created_at",
+    "status",
+    "presentation_mode",
+    "config_path",
+    "summary_path",
+    "compact_path",
+    "dashboard_path",
+    "change_feed_path",
+    "launchers",
+    "local_only",
+    "read_only",
+    "refresh_seconds",
+    "visibility_gate"
+  ],
+  "properties": {
+    "bootstrap_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "project_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "project_root": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "const": "CALABASH_BI_BOOTSTRAP_PASS"
+    },
+    "presentation_mode": {
+      "enum": [
+        "COMPACT_WINDOW",
+        "BROWSER_COMPACT",
+        "HEADLESS_PUBLISHED"
+      ]
+    },
+    "config_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "compact_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dashboard_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "change_feed_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "launchers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "local_only": {
+      "const": true
+    },
+    "read_only": {
+      "const": true
+    },
+    "refresh_seconds": {
+      "type": "integer",
+      "minimum": 2
+    },
+    "visibility_gate": {
+      "enum": [
+        "REQUIRED_WHILE_ACTIVE",
+        "REQUIRED_AT_CHECKPOINTS",
+        "HEADLESS_PUBLISHED"
+      ]
+    },
+    "state_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "headless_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "git_commit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

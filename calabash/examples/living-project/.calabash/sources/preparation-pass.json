@@ -1,0 +1,25 @@
+{
+  "receipt_id": "SPP-001",
+  "scope_covered": [
+    "Grandpa",
+    "Product Architecture",
+    "Ontology"
+  ],
+  "source_count": 3,
+  "verified_source_count": 3,
+  "unverified_source_ids": [],
+  "contradiction_count": 1,
+  "blocking_contradiction_ids": [
+    "CON-001"
+  ],
+  "known_unknown_ids": [
+    "UNK-001"
+  ],
+  "claim_coverage_summary": {
+    "required_claims": 3,
+    "sourced_claims": 2
+  },
+  "prepared_by": "Calabash Builder",
+  "prepared_at": "2026-07-05T10:00:00Z",
+  "receipt_hash": "sha256:sourcepass123"
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "edge_id",
+    "graph_version",
+    "source_go_ids",
+    "target_go_id",
+    "edge_type",
+    "predicate",
+    "invalidation_rule"
+  ],
+  "properties": {
+    "edge_id": {
+      "type": "string"
+    },
+    "graph_version": {
+      "type": "string"
+    },
+    "source_go_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "target_go_id": {
+      "type": "string"
+    },
+    "edge_type": {
+      "type": "string"
+    },
+    "calabash_references": {
+      "type": "array"
+    },
+    "verified_runtime_fact_references": {
+      "type": "array"
+    },
+    "required_verdict": {
+      "type": "string"
+    },
+    "required_outputs": {
+      "type": "array"
+    },
+    "predicate": {
+      "type": "string"
+    },
+    "evidence_source": {
+      "type": "array"
+    },
+    "invalidation_rule": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "CURRENT",
+        "STALE",
+        "INVALID"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

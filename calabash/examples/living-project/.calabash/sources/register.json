@@ -1,0 +1,63 @@
+{
+  "sources": [
+    {
+      "source_id": "SRC-001",
+      "title": "Owner product intent",
+      "location": "docs/owner-intent.md",
+      "hash": "sha256:1",
+      "source_class": [
+        "OWNER_AUTHORITY"
+      ],
+      "authority_level": "PRIMARY",
+      "freshness_status": "CURRENT",
+      "verified": true,
+      "claims_supported": [
+        "CL-001"
+      ],
+      "claims_contradicted": [],
+      "observed_at": "2026-07-01",
+      "confidence": 1.0
+    },
+    {
+      "source_id": "SRC-002",
+      "title": "Current UI observation",
+      "location": "evidence/ui-session-01",
+      "hash": "sha256:2",
+      "source_class": [
+        "OBSERVED_REALITY",
+        "USER_EVIDENCE"
+      ],
+      "authority_level": "DESCRIPTIVE",
+      "freshness_status": "CURRENT",
+      "verified": true,
+      "claims_supported": [
+        "CL-002"
+      ],
+      "claims_contradicted": [
+        "CL-003"
+      ],
+      "observed_at": "2026-07-20",
+      "confidence": 0.85
+    },
+    {
+      "source_id": "SRC-003",
+      "title": "Old workflow document",
+      "location": "docs/workflow-old.md",
+      "hash": "sha256:3",
+      "source_class": [
+        "APPROVED_NORMATIVE"
+      ],
+      "authority_level": "SECONDARY",
+      "freshness_status": "STALE",
+      "verified": true,
+      "claims_supported": [
+        "CL-003"
+      ],
+      "claims_contradicted": [
+        "CL-002"
+      ],
+      "observed_at": "2025-01-01",
+      "confidence": 0.55
+    }
+  ]
+}

@@ -1,67 +1,52 @@
-# Calabash Architecture Reference
+# Full Calabash Architecture
 
-Calabash is a reusable governance architecture for agent-native products. It is not tied to one project, one runtime, or one business domain.
-
-## Placement
-
-Correct placement:
+## Full Structure
 
 ```text
-Owner intent / product constitution
-        ↓
-Product architecture and business journey
-        ↓
-Calabash governance checks
-        ↓
-Domain application implementation
-        ↓
-Agent adapters, runtimes, tools, data, audit
+Grandpa
+→ Product Architecture
+→ Ontology
+→ Contract
+→ Policy
+→ Workflow
+→ Action Catalog
+→ Adapter
+→ Eval & Audit
 ```
 
-Do not place Calabash as a runtime center or a user-facing module.
-
-## The Seven Layers
+The final seven items are the governance layers.
 
 | Layer | Purpose | Typical artifacts | Key question |
 |---|---|---|---|
-| Ontology | Define the domain language | entity map, glossary, relationship model | What things exist and how do they relate? |
-| Contract | Define data and interface shapes | schemas, API specs, event envelopes | What must each layer send and receive? |
-| Policy | Define permissions and boundaries | role matrix, safety rules, access checks | Who can do what, when, and why? |
-| Workflow | Define business state movement | state machine, BPMN-like flow, transitions | What is the next valid state? |
-| Action Catalog | Define allowed actions | action registry, tool list, preconditions | What can the system actually do? |
-| Adapter | Translate between product and agent runtime | thread/turn APIs, orchestration layer | How does product state become agent work? |
-| Eval & Audit | Prove quality and traceability | tests, logs, screenshots, audit events | How do we know it worked and stayed safe? |
+| Ontology | canonical domain meaning | glossary, entity/state/relationship map | What exists and how does it relate? |
+| Contract | exchange semantics and compatibility | schemas, APIs, events, versions | What must be sent, received, and preserved? |
+| Policy | authority, permission, and safety | role/action matrix, access/safety rules | Who may do what, when, and why? |
+| Workflow | product state movement | state machine, exceptions, recovery | What is the next valid business state? |
+| Action Catalog | allowed product/system actions | action registry, preconditions, side effects | What can the system actually do? |
+| Adapter | product/runtime translation | context/action/result mappings | How does meaning enter and return from AI/runtime safely? |
+| Eval & Audit | product proof and traceability | evals, evidence packs, logs, audit | How do we know it worked and who did what? |
 
-## Metaphor Roles
+## Creation And Evolution
 
-These names are optional shorthand, not required implementation classes.
+Full layers are not produced from a universal checklist. Each layer is populated by
+prepared evidence, dynamic themes, Owner decisions, and implementation/operation
+reality.
 
-| Name | Meaning |
-|---|---|
-| Grandpa / 爷爷 | Owner intent, product constitution, value judgment |
-| Snake / 蛇精 | Ambiguity, hallucination, overclaim, boundary drift |
-| Scorpion / 蝎子精 | Legacy chaos, dirty integration, broken links, engineering debt |
+UI Reality can amend Product Architecture, Ontology, Policy, Workflow, Action, and
+Eval. Core Workflow Reality can amend Contract, Policy, Workflow, Action, Adapter,
+Eval, and possibly Grandpa when feasibility changes product promise.
 
-## Mature Architecture Comparisons
+## Dependencies
 
-Use these as reference frames when explaining Calabash:
+- Contract expresses Ontology but does not define it.
+- Policy constrains Contracts, Workflows, and Actions.
+- Workflow uses Ontology states and Policy-authorized transitions.
+- Action Catalog makes Workflow transitions executable.
+- Adapter exposes only valid product state and authorized actions to runtime.
+- Eval & Audit proves the product and governance claims.
 
-- Domain-Driven Design: aligns with Ontology and bounded language.
-- Clean Architecture / Hexagonal Architecture: aligns with Adapter and boundary separation.
-- BPMN and finite state machines: align with Workflow.
-- RBAC/ABAC: align with Policy.
-- OpenAPI/JSON Schema/event contracts: align with Contract.
-- Tool registries and command buses: align with Action Catalog.
-- Observability, audit trails, and evaluation harnesses: align with Eval & Audit.
+## Boundary
 
-Calabash is not a replacement for these practices. It is a wrapper that makes them usable for agent-native business systems.
-
-## Architecture Test
-
-A Calabash architecture is healthy when:
-
-1. Product users and business outcomes are clear before agent details.
-2. Every major concept has one name and one owner.
-3. Every important action has a precondition, permission check, side effect, and audit event.
-4. Agents can only act through adapters and action catalogs.
-5. Evidence exists for user-visible flows, backend state changes, and runtime decisions.
+Product Workflow is not a GO sequence, CLK Level matrix, or GLK graph.
+Action Catalog is not a Worker shell allowlist.
+Adapter is not Planner, Router, Grapher, or runtime itself.

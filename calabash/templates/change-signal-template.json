@@ -1,0 +1,12 @@
+{
+  "signal_id": "UI-XXX",
+  "track": "UI",
+  "observed_at": "2026-01-01T00:00:00Z",
+  "severity": "MEDIUM",
+  "status": "OBSERVED",
+  "summary": "",
+  "evidence": [],
+  "affected_parts": [],
+  "affected_theme_ids": [],
+  "recommended_action": ""
+}

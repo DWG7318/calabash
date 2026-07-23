@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Calabash Theme Map",
+  "type": "object",
+  "required": [
+    "themes"
+  ],
+  "properties": {
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "theme_id",
+          "title",
+          "related_parts",
+          "criticality",
+          "status",
+          "claims"
+        ],
+        "properties": {
+          "theme_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "related_parts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "criticality": {
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "CRITICAL"
+            ]
+          },
+          "blocking": {
+            "type": "boolean"
+          },
+          "status": {
+            "enum": [
+              "OPEN",
+              "BLOCKED",
+              "DECIDED",
+              "SUPPORTED",
+              "MONITORING",
+              "SUPERSEDED"
+            ]
+          },
+          "claims": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "claim_id",
+                "text",
+                "required",
+                "status"
+              ],
+              "properties": {
+                "claim_id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "required": {
+                  "type": "boolean"
+                },
+                "status": {
+                  "enum": [
+                    "SUPPORTED",
+                    "DECIDED",
+                    "OPEN",
+                    "BLOCKED",
+                    "MONITORING"
+                  ]
+                },
+                "source_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "decision_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "question_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "living_track": {
+            "enum": [
+              "NONE",
+              "UI",
+              "WORKFLOW",
+              "BOTH"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

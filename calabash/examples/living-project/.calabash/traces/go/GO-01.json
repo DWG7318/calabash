@@ -1,0 +1,23 @@
+{
+  "go_id": "GO-01",
+  "go_version": "1",
+  "baseline_id": "demo-product",
+  "baseline_version": "1.2.0",
+  "baseline_hash": "sha256:demo12345678",
+  "grandpa_references": [
+    "grandpa.purpose"
+  ],
+  "product_architecture_references": [
+    "journeys.Create"
+  ],
+  "ontology_references": [
+    "Result"
+  ],
+  "full_layer_references": [],
+  "derived_outcome_claim": "User can create one reviewable result.",
+  "verification_implications": [
+    "Prove end-to-end result creation"
+  ],
+  "invalidation_rule": "Stale if Result meaning or journey changes",
+  "status": "CURRENT"
+}

@@ -1,0 +1,26 @@
+{
+  "bootstrap_id": "BI-BOOTSTRAP-YYYYMMDD-HHMMSS",
+  "project_name": "",
+  "project_root": ".",
+  "created_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "status": "CALABASH_BI_BOOTSTRAP_PASS",
+  "presentation_mode": "COMPACT_WINDOW",
+  "config_path": ".calabash/bi/config.json",
+  "summary_path": ".calabash/bi/summary.json",
+  "compact_path": ".calabash/bi/compact.html",
+  "dashboard_path": ".calabash/bi/dashboard.html",
+  "change_feed_path": ".calabash/bi/change-feed.jsonl",
+  "launchers": [
+    ".calabash/bi/launch-calabash-bi.sh",
+    ".calabash/bi/launch-calabash-bi.command",
+    ".calabash/bi/launch-calabash-bi.ps1",
+    ".calabash/bi/launch-calabash-bi.cmd"
+  ],
+  "local_only": true,
+  "read_only": true,
+  "refresh_seconds": 5,
+  "visibility_gate": "REQUIRED_WHILE_ACTIVE",
+  "state_hash": null,
+  "headless_reason": null,
+  "git_commit": null
+}

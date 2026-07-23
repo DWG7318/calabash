@@ -1,0 +1,15 @@
+{
+  "decision_id": "DEC-XXX",
+  "question_id": "Q-XXX",
+  "question_version": 1,
+  "owner_answer": null,
+  "normalized_claim": "",
+  "selected_option_ids": [],
+  "owner_text": null,
+  "ai_recommendation": [],
+  "recommendation_accepted": "partial",
+  "affected_calabash_paths": [],
+  "supersedes": null,
+  "timestamp": "2026-01-01T00:00:00Z",
+  "git_commit": "0000000"
+}

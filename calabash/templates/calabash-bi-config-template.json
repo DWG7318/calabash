@@ -1,0 +1,36 @@
+{
+  "project_name": "",
+  "max_source_age_days": 180,
+  "severity_weights": {
+    "LOW": 1,
+    "MEDIUM": 2,
+    "HIGH": 3,
+    "CRITICAL": 4
+  },
+  "desktop": {
+    "enabled": true,
+    "mode": "COMPACT_WINDOW",
+    "host": "127.0.0.1",
+    "port": 8765,
+    "refresh_seconds": 5,
+    "latest_change_count": 12,
+    "start_with_project": true,
+    "startup_policy": "PROJECT_START",
+    "visibility_gate": "REQUIRED_WHILE_ACTIVE",
+    "open_on_start": true,
+    "prefer_app_window": true,
+    "always_on_top": false,
+    "window_width": 540,
+    "window_height": 760,
+    "install_desktop_shortcut": false,
+    "headless_reason": null
+  },
+  "full_dashboard": {
+    "enabled": true,
+    "output_path": ".calabash/bi/dashboard.html",
+    "compact_output_path": ".calabash/bi/compact.html",
+    "auto_rebuild": true,
+    "auto_refresh_seconds": 10
+  },
+  "commit_generated_assets": true
+}

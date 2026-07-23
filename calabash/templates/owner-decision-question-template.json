@@ -1,0 +1,33 @@
+{
+  "question_id": "Q-XXX",
+  "version": 1,
+  "theme_id": "THEME-XXX",
+  "decision_claim": "",
+  "why_now": "",
+  "evidence_summary": "",
+  "source_references": [],
+  "choice_mode": "SINGLE",
+  "options": [
+    {
+      "option_id": "A",
+      "label": "",
+      "consequences": [],
+      "risks": []
+    },
+    {
+      "option_id": "OTHER_WITH_TEXT",
+      "label": "Other answer",
+      "consequences": [],
+      "risks": []
+    }
+  ],
+  "recommended_option_ids": [
+    "A"
+  ],
+  "recommendation_rationale": "",
+  "recommendation_confidence": 0.0,
+  "trade_offs": [],
+  "affected_artifacts": [],
+  "follow_up_rules": [],
+  "status": "DRAFT"
+}

@@ -1,0 +1,667 @@
+{
+  "generated_at": "2026-07-23T22:42:58.983506+00:00",
+  "state_hash": "sha256:f5e2842cabe7e0269529512ea17388007d744bc040470d89abe51600480b97e8",
+  "source_file_count": 23,
+  "project_root": "/mnt/data/calabash-2.2.0-candidate/calabash/examples/living-project",
+  "project_name": "Demo Living Calabash",
+  "overall_status": "BLOCKED",
+  "baseline": {
+    "baseline_id": "demo-product",
+    "mode": "MINIMUM",
+    "version": "1.2.0",
+    "hash": "sha256:demo12345678",
+    "git_commit": "abcdef1234567",
+    "git_tag": "calabash/demo-product/v1.2.0",
+    "status": "FROZEN",
+    "grandpa": {
+      "purpose": "Help a user complete one reliable product journey"
+    },
+    "product_architecture": {
+      "roles": [
+        "Owner",
+        "End User"
+      ],
+      "journeys": [
+        "Create",
+        "Review",
+        "Complete"
+      ]
+    },
+    "ontology": {
+      "concepts": [
+        "User",
+        "Project",
+        "Result"
+      ]
+    },
+    "known_gaps": [
+      "Formal policy layer not yet frozen"
+    ],
+    "upgrade_triggers": [
+      "External side effects become material"
+    ],
+    "review_policy": {
+      "next_review_due": "2026-08-15",
+      "event_triggers": [
+        "material UI drift",
+        "workflow tool change"
+      ]
+    },
+    "living_tracks": {
+      "ui": {
+        "status": "MONITORING",
+        "last_observed_at": "2026-07-20"
+      },
+      "workflow": {
+        "status": "MONITORING",
+        "last_observed_at": "2026-07-18"
+      }
+    },
+    "source_snapshot": [
+      "SRC-001",
+      "SRC-002"
+    ],
+    "decision_ledger_head": "DEC-002"
+  },
+  "current_definition": {
+    "grandpa": {
+      "purpose": "Help a user complete one reliable product journey"
+    },
+    "product_architecture": {
+      "roles": [
+        "Owner",
+        "End User"
+      ],
+      "entry_points": [],
+      "journeys": [
+        "Create",
+        "Review",
+        "Complete"
+      ],
+      "modules": [],
+      "outcomes": []
+    },
+    "ontology": {
+      "concepts": [
+        "User",
+        "Project",
+        "Result"
+      ],
+      "relationships": [],
+      "states": [],
+      "open_conflicts": []
+    },
+    "full_layers": {},
+    "known_gaps": [
+      "Formal policy layer not yet frozen"
+    ],
+    "upgrade_triggers": [
+      "External side effects become material"
+    ]
+  },
+  "bi": {
+    "bootstrap_status": "CALABASH_BI_BOOTSTRAP_PASS",
+    "presentation_mode": "COMPACT_WINDOW",
+    "start_with_project": true,
+    "refresh_seconds": 5,
+    "latest_change_count": 12,
+    "local_only": true,
+    "read_only": true
+  },
+  "git": {
+    "head": null,
+    "branch": null,
+    "calabash_dirty": false,
+    "changed_paths": []
+  },
+  "working_state": {
+    "git_dirty": false,
+    "changed_paths": [],
+    "provisional_decisions": 1,
+    "pending_amendments": 0,
+    "open_ui_signals": 1,
+    "open_workflow_signals": 1,
+    "authority_note": "Accepted baseline is authoritative; working changes remain non-authoritative until accepted and versioned."
+  },
+  "completeness": {
+    "required_claims": 3,
+    "resolved_required_claims": 2,
+    "blocked_required_claims": 0,
+    "monitoring_claims": 1,
+    "percent": 66.7
+  },
+  "sources": {
+    "total": 3,
+    "verified": 3,
+    "stale": 1,
+    "percent_verified": 100.0
+  },
+  "questions": {
+    "total": 3,
+    "open": 1,
+    "blocking": 1,
+    "answered": 2
+  },
+  "decisions": {
+    "total": 2,
+    "superseding": 0,
+    "provisional": 1
+  },
+  "contradictions": {
+    "open": 1,
+    "total": 1
+  },
+  "living_tracks": {
+    "ui_open": 1,
+    "workflow_open": 1,
+    "ui_high": 1,
+    "workflow_high": 1
+  },
+  "traces": {
+    "go_total": 1,
+    "go_stale": 0,
+    "edge_total": 0,
+    "edge_stale": 0
+  },
+  "review": {
+    "last_reviewed_at": "2026-07-15T12:00:00Z",
+    "next_review_due": "2026-08-15",
+    "overdue": false,
+    "count": 1
+  },
+  "amendments": {
+    "total": 1,
+    "accepted": 1,
+    "open": 0,
+    "records": [
+      {
+        "amendment_id": "AMD-001",
+        "baseline_id": "demo-product",
+        "from_version": "1.1.0",
+        "to_version": "1.2.0",
+        "trigger": "Owner decision Q-002 after UI evidence",
+        "source_ids": [
+          "SRC-002"
+        ],
+        "decision_ids": [
+          "DEC-002"
+        ],
+        "affected_parts": [
+          "Product Architecture",
+          "Ontology"
+        ],
+        "affected_theme_ids": [
+          "THEME-002"
+        ],
+        "affected_go_ids": [
+          "GO-01"
+        ],
+        "affected_edge_ids": [],
+        "summary": "Add guided first action and example result.",
+        "status": "ACCEPTED",
+        "created_at": "2026-07-12T12:00:00Z",
+        "git_commit": "abcdef1234567"
+      }
+    ]
+  },
+  "changes": {
+    "total": 6,
+    "latest_at": "2026-07-24T12:00:00Z",
+    "recent": [
+      {
+        "timestamp": "2026-07-24T12:00:00Z",
+        "change_type": "BOOTSTRAP",
+        "summary": "Calabash desktop definition window initialized.",
+        "reason": "Calabash 2.2.0 requires continuous visibility of current definition and latest semantic changes.",
+        "affected_parts": [
+          "Calabash BI"
+        ],
+        "affected_artifacts": [
+          "bi/config.json",
+          "bi/bootstrap.json",
+          "bi/change-feed.jsonl",
+          "bi/dashboard.html"
+        ],
+        "impact": [
+          "Project definition is continuously visible during Loop work"
+        ],
+        "before_refs": [],
+        "after_refs": [
+          "CALABASH_BI_BOOTSTRAP_PASS"
+        ],
+        "source_refs": [],
+        "decision_refs": [],
+        "baseline_version": "1.2.0",
+        "git_commit": null,
+        "status": "ACCEPTED",
+        "actor": "Calabash Builder",
+        "event_id": "CHG-20260724-001",
+        "record_ids": [
+          "CALABASH_BI_BOOTSTRAP_PASS"
+        ]
+      },
+      {
+        "timestamp": "2026-07-20T09:00:00Z",
+        "change_type": "UI_SIGNAL",
+        "summary": "Users confuse Draft and Result on the final screen.",
+        "reason": "Current user observation shows that the implemented labels do not preserve the intended ontology distinction.",
+        "affected_parts": [
+          "Product Architecture",
+          "Ontology",
+          "Eval & Audit"
+        ],
+        "affected_artifacts": [
+          "observations/ui/UI-001.json",
+          "themes/map.json"
+        ],
+        "impact": [
+          "UI labels require experiment",
+          "Result ontology may need clarification",
+          "GO-01 trace may become stale"
+        ],
+        "before_refs": [
+          "DEC-002"
+        ],
+        "after_refs": [
+          "UI-001"
+        ],
+        "source_refs": [
+          "SRC-002"
+        ],
+        "decision_refs": [
+          "DEC-002"
+        ],
+        "baseline_version": "1.2.0",
+        "git_commit": null,
+        "status": "EXPERIMENTAL",
+        "actor": "UI Observer",
+        "event_id": "CHG-20260720-001",
+        "record_ids": [
+          "UI-001"
+        ]
+      },
+      {
+        "timestamp": "2026-07-18T09:00:00Z",
+        "change_type": "WORKFLOW_SIGNAL",
+        "summary": "Primary tool outage leaves no accepted fallback.",
+        "reason": "Observed workflow reality contradicts the older no-fallback assumption.",
+        "affected_parts": [
+          "Product Architecture",
+          "Workflow",
+          "Action Catalog"
+        ],
+        "affected_artifacts": [
+          "observations/workflow/WF-001.json",
+          "themes/map.json"
+        ],
+        "impact": [
+          "Q-003 blocks workflow definition",
+          "Future GO Verification must test fallback behavior"
+        ],
+        "before_refs": [
+          "SRC-003"
+        ],
+        "after_refs": [
+          "WF-001",
+          "Q-003"
+        ],
+        "source_refs": [
+          "SRC-002",
+          "SRC-003"
+        ],
+        "decision_refs": [],
+        "baseline_version": "1.2.0",
+        "git_commit": null,
+        "status": "PROVISIONAL",
+        "actor": "Workflow Observer",
+        "event_id": "CHG-20260718-001",
+        "record_ids": [
+          "WF-001",
+          "Q-003"
+        ]
+      },
+      {
+        "timestamp": "2026-07-12T12:00:00Z",
+        "change_type": "AMENDMENT",
+        "summary": "Baseline v1.2.0 adopts guided first action and example result.",
+        "reason": "Accepted amendment AMD-001 applies the provisional Owner decision to the current baseline.",
+        "affected_parts": [
+          "Product Architecture",
+          "Ontology"
+        ],
+        "affected_artifacts": [
+          "amendments/AMD-001.json",
+          "baseline/manifest.json"
+        ],
+        "impact": [
+          "GO-01 may require re-verification if Result meaning changes"
+        ],
+        "before_refs": [
+          "baseline-v1.1.0"
+        ],
+        "after_refs": [
+          "baseline-v1.2.0",
+          "AMD-001"
+        ],
+        "source_refs": [
+          "SRC-002"
+        ],
+        "decision_refs": [
+          "DEC-002"
+        ],
+        "baseline_version": "1.2.0",
+        "git_commit": "abcdef1234567",
+        "status": "ACCEPTED",
+        "actor": "Calabash Builder",
+        "event_id": "CHG-20260712-002",
+        "record_ids": [
+          "baseline-v1.2.0",
+          "AMD-001"
+        ]
+      },
+      {
+        "timestamp": "2026-07-12T11:00:00Z",
+        "change_type": "OWNER_DECISION",
+        "summary": "First use adds a guided first action and an example result.",
+        "reason": "Owner selected the recommended multi-choice answer to reduce observed first-use abandonment.",
+        "affected_parts": [
+          "Product Architecture",
+          "Ontology"
+        ],
+        "affected_artifacts": [
+          "baseline/manifest.json",
+          "questions/Q-002.json",
+          "decisions/ledger.jsonl"
+        ],
+        "impact": [
+          "UI onboarding prototype changes",
+          "GO-01 trace requires review after label experiment"
+        ],
+        "before_refs": [
+          "Q-002-v1"
+        ],
+        "after_refs": [
+          "DEC-002"
+        ],
+        "source_refs": [
+          "SRC-002"
+        ],
+        "decision_refs": [
+          "DEC-002"
+        ],
+        "baseline_version": "1.2.0",
+        "git_commit": "2222222",
+        "status": "PROVISIONAL",
+        "actor": "Owner",
+        "event_id": "CHG-20260712-001",
+        "record_ids": [
+          "DEC-002"
+        ]
+      },
+      {
+        "timestamp": "2026-07-10T10:00:00Z",
+        "change_type": "OWNER_DECISION",
+        "summary": "Owner retains final product approval authority.",
+        "reason": "Owner answered Q-001 after review of product authority evidence.",
+        "affected_parts": [
+          "Grandpa",
+          "Product Architecture"
+        ],
+        "affected_artifacts": [
+          "baseline/manifest.json",
+          "decisions/ledger.jsonl"
+        ],
+        "impact": [
+          "Final approval remains outside automated execution"
+        ],
+        "before_refs": [],
+        "after_refs": [
+          "DEC-001"
+        ],
+        "source_refs": [
+          "SRC-001"
+        ],
+        "decision_refs": [
+          "DEC-001"
+        ],
+        "baseline_version": "1.1.0",
+        "git_commit": "1111111",
+        "status": "ACCEPTED",
+        "actor": "Owner",
+        "event_id": "CHG-20260710-001",
+        "record_ids": [
+          "DEC-001"
+        ]
+      }
+    ],
+    "explicit_feed": true
+  },
+  "baseline_history": [
+    {
+      "version": "1.0.0",
+      "status": "FROZEN",
+      "frozen_at": "2026-06-01T12:00:00Z",
+      "git_commit": "aaaaaaa",
+      "git_tag": "calabash/demo-product/v1.0.0",
+      "summary": "Initial Minimum Calabash"
+    },
+    {
+      "version": "1.1.0",
+      "status": "SUPERSEDED",
+      "frozen_at": "2026-06-20T12:00:00Z",
+      "git_commit": "bbbbbbb",
+      "git_tag": "calabash/demo-product/v1.1.0",
+      "summary": "Add first-use journey definition"
+    },
+    {
+      "version": "1.2.0",
+      "status": "FROZEN",
+      "frozen_at": "2026-07-12T12:00:00Z",
+      "git_commit": "abcdef1234567",
+      "git_tag": "calabash/demo-product/v1.2.0",
+      "summary": "Clarify guided first-use UI"
+    }
+  ],
+  "themes": [
+    {
+      "theme_id": "THEME-001",
+      "title": "Final approval authority",
+      "status": "DECIDED",
+      "criticality": "CRITICAL",
+      "required": 1,
+      "resolved": 1,
+      "blocked": 0,
+      "monitoring": 0,
+      "completeness": 100.0
+    },
+    {
+      "theme_id": "THEME-002",
+      "title": "First-use UI journey",
+      "status": "MONITORING",
+      "criticality": "HIGH",
+      "required": 1,
+      "resolved": 1,
+      "blocked": 0,
+      "monitoring": 1,
+      "completeness": 100.0
+    },
+    {
+      "theme_id": "THEME-003",
+      "title": "Core workflow fallback",
+      "status": "OPEN",
+      "criticality": "HIGH",
+      "required": 1,
+      "resolved": 0,
+      "blocked": 0,
+      "monitoring": 0,
+      "completeness": 0.0
+    }
+  ],
+  "open_questions": [
+    {
+      "question_id": "Q-003",
+      "version": 1,
+      "theme_id": "THEME-003",
+      "decision_claim": "What fallback is authoritative when the primary tool is unavailable?",
+      "why_now": "The current workflow cannot execute reliably without a fallback",
+      "evidence_summary": "Historical document is stale and observed reality contradicts it.",
+      "source_references": [
+        "SRC-002",
+        "SRC-003"
+      ],
+      "choice_mode": "SINGLE",
+      "options": [
+        {
+          "option_id": "A",
+          "label": "Manual fallback",
+          "consequences": [
+            "Maintains continuity"
+          ],
+          "risks": [
+            "Adds human workload"
+          ]
+        },
+        {
+          "option_id": "B",
+          "label": "Block and retry later",
+          "consequences": [
+            "Preserves automation purity"
+          ],
+          "risks": [
+            "Stops service"
+          ]
+        },
+        {
+          "option_id": "D",
+          "label": "DEFER_AND_COLLECT_EVIDENCE",
+          "consequences": [
+            "Run controlled experiment first"
+          ],
+          "risks": [
+            "Delays definition"
+          ]
+        }
+      ],
+      "recommended_option_ids": [
+        "D"
+      ],
+      "recommendation_rationale": "Current evidence is contradictory and insufficient.",
+      "recommendation_confidence": 0.62,
+      "trade_offs": [
+        "Decision speed versus operational evidence"
+      ],
+      "affected_artifacts": [
+        "baseline/product-architecture.md",
+        "baseline/full/workflow.md"
+      ],
+      "follow_up_rules": [
+        "Collect two outage simulations"
+      ],
+      "status": "READY"
+    }
+  ],
+  "ui_signals": [
+    {
+      "signal_id": "UI-001",
+      "track": "UI",
+      "observed_at": "2026-07-20T09:00:00Z",
+      "severity": "HIGH",
+      "status": "AMENDMENT_CANDIDATE",
+      "summary": "Users confuse Draft and Result on the final screen.",
+      "evidence": [
+        "SRC-002"
+      ],
+      "affected_parts": [
+        "Product Architecture",
+        "Ontology",
+        "Eval & Audit"
+      ],
+      "affected_theme_ids": [
+        "THEME-002"
+      ],
+      "recommended_action": "Test revised labels and state separation."
+    }
+  ],
+  "workflow_signals": [
+    {
+      "signal_id": "WF-001",
+      "track": "WORKFLOW",
+      "observed_at": "2026-07-18T09:00:00Z",
+      "severity": "CRITICAL",
+      "status": "OWNER_DECISION_REQUIRED",
+      "summary": "Primary tool outage leaves no accepted fallback.",
+      "evidence": [
+        "SRC-002",
+        "SRC-003"
+      ],
+      "affected_parts": [
+        "Product Architecture",
+        "Workflow",
+        "Action Catalog"
+      ],
+      "affected_theme_ids": [
+        "THEME-003"
+      ],
+      "recommended_action": "Run outage experiments then resolve Q-003."
+    }
+  ],
+  "decision_timeline": [
+    {
+      "decision_id": "DEC-002",
+      "question_id": "Q-002",
+      "question_version": 1,
+      "owner_answer": [
+        "A",
+        "B"
+      ],
+      "normalized_claim": "First use includes guided first action and an example result.",
+      "selected_option_ids": [
+        "A",
+        "B"
+      ],
+      "owner_text": null,
+      "ai_recommendation": [
+        "A",
+        "B"
+      ],
+      "recommendation_accepted": "true",
+      "affected_calabash_paths": [
+        "product_architecture.first_use"
+      ],
+      "supersedes": null,
+      "timestamp": "2026-07-12T11:00:00Z",
+      "git_commit": "2222222",
+      "decision_status": "PROVISIONAL",
+      "evidence_required": [
+        "Observe first-run completion after release"
+      ],
+      "review_trigger": "UI-001 follow-up study",
+      "valid_until": "2026-09-15"
+    },
+    {
+      "decision_id": "DEC-001",
+      "question_id": "Q-001",
+      "question_version": 1,
+      "owner_answer": "A",
+      "normalized_claim": "Owner retains final product approval authority.",
+      "selected_option_ids": [
+        "A"
+      ],
+      "owner_text": null,
+      "ai_recommendation": [
+        "A"
+      ],
+      "recommendation_accepted": "true",
+      "affected_calabash_paths": [
+        "grandpa.final_approval"
+      ],
+      "supersedes": null,
+      "timestamp": "2026-07-10T10:00:00Z",
+      "git_commit": "1111111",
+      "decision_status": "FINAL",
+      "evidence_required": [],
+      "review_trigger": null,
+      "valid_until": null
+    }
+  ]
+}

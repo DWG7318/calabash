@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "source_id": "SRC-XXX",
+      "title": "",
+      "location": null,
+      "hash": null,
+      "source_class": [
+        "OWNER_AUTHORITY"
+      ],
+      "authority_level": "PRIMARY",
+      "freshness_status": "UNKNOWN",
+      "verified": false,
+      "claims_supported": [],
+      "claims_contradicted": [],
+      "observed_at": null,
+      "confidence": 0.0
+    }
+  ]
+}

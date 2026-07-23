@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UI or Workflow Change Signal",
+  "type": "object",
+  "required": [
+    "signal_id",
+    "track",
+    "observed_at",
+    "severity",
+    "status",
+    "evidence",
+    "affected_parts"
+  ],
+  "properties": {
+    "signal_id": {
+      "type": "string"
+    },
+    "track": {
+      "enum": [
+        "UI",
+        "WORKFLOW"
+      ]
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "severity": {
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "CRITICAL"
+      ]
+    },
+    "status": {
+      "enum": [
+        "OBSERVED",
+        "TRIAGED",
+        "EVIDENCE_REQUIRED",
+        "DISMISSED",
+        "AMENDMENT_CANDIDATE",
+        "OWNER_DECISION_REQUIRED",
+        "AMENDED",
+        "ACCEPTED_AS_RISK"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "affected_parts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "affected_theme_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommended_action": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

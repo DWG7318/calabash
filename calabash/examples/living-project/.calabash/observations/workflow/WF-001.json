@@ -1,0 +1,21 @@
+{
+  "signal_id": "WF-001",
+  "track": "WORKFLOW",
+  "observed_at": "2026-07-18T09:00:00Z",
+  "severity": "CRITICAL",
+  "status": "OWNER_DECISION_REQUIRED",
+  "summary": "Primary tool outage leaves no accepted fallback.",
+  "evidence": [
+    "SRC-002",
+    "SRC-003"
+  ],
+  "affected_parts": [
+    "Product Architecture",
+    "Workflow",
+    "Action Catalog"
+  ],
+  "affected_theme_ids": [
+    "THEME-003"
+  ],
+  "recommended_action": "Run outage experiments then resolve Q-003."
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Calabash BI Configuration",
+  "type": "object",
+  "required": ["project_name", "max_source_age_days", "severity_weights", "desktop", "full_dashboard"],
+  "properties": {
+    "project_name": {"type": "string", "minLength": 1},
+    "max_source_age_days": {"type": "integer", "minimum": 1},
+    "severity_weights": {"type": "object"},
+    "desktop": {
+      "type": "object",
+      "required": [
+        "enabled", "mode", "host", "port", "refresh_seconds",
+        "latest_change_count", "start_with_project", "startup_policy",
+        "visibility_gate", "open_on_start", "prefer_app_window"
+      ],
+      "properties": {
+        "enabled": {"const": true},
+        "mode": {"enum": ["COMPACT_WINDOW", "BROWSER_COMPACT", "HEADLESS_PUBLISHED"]},
+        "host": {"const": "127.0.0.1"},
+        "port": {"type": "integer", "minimum": 1, "maximum": 65535},
+        "refresh_seconds": {"type": "integer", "minimum": 2, "maximum": 300},
+        "latest_change_count": {"type": "integer", "minimum": 1, "maximum": 100},
+        "start_with_project": {"type": "boolean"},
+        "startup_policy": {"enum": ["PROJECT_START", "OWNER_MANUAL", "HEADLESS_PUBLISHED"]},
+        "visibility_gate": {"enum": ["REQUIRED_WHILE_ACTIVE", "REQUIRED_AT_CHECKPOINTS", "HEADLESS_PUBLISHED"]},
+        "open_on_start": {"type": "boolean"},
+        "prefer_app_window": {"type": "boolean"},
+        "always_on_top": {"type": "boolean"},
+        "window_width": {"type": "integer", "minimum": 360},
+        "window_height": {"type": "integer", "minimum": 420},
+        "install_desktop_shortcut": {"type": "boolean"},
+        "headless_reason": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "full_dashboard": {
+      "type": "object",
+      "required": ["enabled", "output_path", "compact_output_path", "auto_rebuild", "auto_refresh_seconds"],
+      "properties": {
+        "enabled": {"const": true},
+        "output_path": {"type": "string", "minLength": 1},
+        "compact_output_path": {"type": "string", "minLength": 1},
+        "auto_rebuild": {"type": "boolean"},
+        "auto_refresh_seconds": {"type": "integer", "minimum": 2, "maximum": 600}
+      },
+      "additionalProperties": true
+    },
+    "commit_generated_assets": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}

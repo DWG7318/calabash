@@ -1,0 +1,37 @@
+{
+  "review_id": "REV-001",
+  "baseline_id": "demo-product",
+  "baseline_version": "1.2.0",
+  "type": "HEALTH",
+  "trigger": "scheduled",
+  "reviewed_at": "2026-07-15T12:00:00Z",
+  "scope": [
+    "all active themes"
+  ],
+  "sources_rechecked": [
+    "SRC-001",
+    "SRC-002"
+  ],
+  "themes_reviewed": [
+    "THEME-001",
+    "THEME-002",
+    "THEME-003"
+  ],
+  "ui_signals": [
+    "UI-001"
+  ],
+  "workflow_signals": [
+    "WF-001"
+  ],
+  "contradictions": [
+    "SRC-002 vs SRC-003"
+  ],
+  "trace_impact": [],
+  "verdict": "AMENDMENT_REQUIRED",
+  "actions": [
+    "Resolve Q-003",
+    "Test UI labels"
+  ],
+  "next_review_due": "2026-08-15",
+  "git_commit": "3333333"
+}

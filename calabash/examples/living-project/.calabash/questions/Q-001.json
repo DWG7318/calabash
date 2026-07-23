@@ -1,0 +1,47 @@
+{
+  "question_id": "Q-001",
+  "version": 1,
+  "theme_id": "THEME-001",
+  "decision_claim": "Who has final approval authority?",
+  "why_now": "Required before acceptance design",
+  "evidence_summary": "Owner statements consistently reserve final authority.",
+  "source_references": [
+    "SRC-001"
+  ],
+  "choice_mode": "SINGLE",
+  "options": [
+    {
+      "option_id": "A",
+      "label": "Owner final approval",
+      "consequences": [
+        "Preserves Owner authority"
+      ],
+      "risks": [
+        "May add review latency"
+      ]
+    },
+    {
+      "option_id": "B",
+      "label": "AI final approval",
+      "consequences": [
+        "Maximum automation"
+      ],
+      "risks": [
+        "Violates current Owner intent"
+      ]
+    }
+  ],
+  "recommended_option_ids": [
+    "A"
+  ],
+  "recommendation_rationale": "Directly supported by primary authority.",
+  "recommendation_confidence": 0.99,
+  "trade_offs": [
+    "Speed versus authority"
+  ],
+  "affected_artifacts": [
+    "baseline/grandpa.md"
+  ],
+  "follow_up_rules": [],
+  "status": "ANSWERED"
+}
