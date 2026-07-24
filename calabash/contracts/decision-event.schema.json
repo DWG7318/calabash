@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Owner Decision Event",
+  "type": "object",
+  "required": [
+    "decision_id",
+    "question_id",
+    "question_version",
+    "normalized_claim",
+    "selected_option_ids",
+    "recommendation_accepted",
+    "timestamp",
+    "git_commit"
+  ],
+  "properties": {
+    "decision_id": {
+      "type": "string"
+    },
+    "question_id": {
+      "type": "string"
+    },
+    "question_version": {
+      "type": "integer"
+    },
+    "owner_answer": {},
+    "normalized_claim": {
+      "type": "string"
+    },
+    "selected_option_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "owner_text": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ai_recommendation": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommendation_accepted": {
+      "enum": [
+        "true",
+        "false",
+        "partial"
+      ]
+    },
+    "affected_calabash_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "git_commit": {
+      "type": "string",
+      "minLength": 7
+    },
+    "decision_status": {
+      "enum": [
+        "FINAL",
+        "PROVISIONAL",
+        "EXPERIMENTAL",
+        "DEFERRED"
+      ]
+    },
+    "evidence_required": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "review_trigger": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "valid_until": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    }
+  },
+  "additionalProperties": true
+}

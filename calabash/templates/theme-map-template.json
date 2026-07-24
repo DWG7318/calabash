@@ -1,0 +1,26 @@
+{
+  "themes": [
+    {
+      "theme_id": "THEME-XXX",
+      "title": "",
+      "related_parts": [
+        "Grandpa"
+      ],
+      "criticality": "HIGH",
+      "blocking": true,
+      "status": "OPEN",
+      "living_track": "NONE",
+      "question_ids": [],
+      "claims": [
+        {
+          "claim_id": "CL-XXX",
+          "text": "",
+          "required": true,
+          "status": "OPEN",
+          "source_ids": [],
+          "decision_ids": []
+        }
+      ]
+    }
+  ]
+}

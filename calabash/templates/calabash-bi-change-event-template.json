@@ -1,0 +1,20 @@
+{
+  "event_id": "CHG-YYYYMMDD-HHMMSS-NNN",
+  "timestamp": "2026-01-01T00:00:00Z",
+  "change_type": "OWNER_DECISION",
+  "summary": "",
+  "reason": "",
+  "status": "PROVISIONAL",
+  "affected_parts": [],
+  "affected_artifacts": [],
+  "impact": [],
+  "before_refs": [],
+  "after_refs": [],
+  "source_refs": [],
+  "decision_refs": [],
+  "actor": "Owner",
+  "git_commit": null,
+  "baseline_version": null,
+  "baseline_from": null,
+  "baseline_to": null
+}

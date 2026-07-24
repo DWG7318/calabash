@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project Calabash Baseline",
+  "type": "object",
+  "required": [
+    "baseline_id",
+    "mode",
+    "version",
+    "hash",
+    "git_commit",
+    "status",
+    "grandpa",
+    "product_architecture",
+    "ontology",
+    "review_policy",
+    "living_tracks"
+  ],
+  "properties": {
+    "baseline_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mode": {
+      "enum": [
+        "MINIMUM",
+        "FULL"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "hash": {
+      "type": "string",
+      "minLength": 8
+    },
+    "git_commit": {
+      "type": "string",
+      "minLength": 7
+    },
+    "git_tag": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "DRAFT",
+        "READY",
+        "FROZEN",
+        "SUPERSEDED"
+      ]
+    },
+    "grandpa": {
+      "type": "object"
+    },
+    "product_architecture": {
+      "type": "object"
+    },
+    "ontology": {
+      "type": "object"
+    },
+    "full_layers": {
+      "type": "object"
+    },
+    "known_gaps": {
+      "type": "array"
+    },
+    "upgrade_triggers": {
+      "type": "array"
+    },
+    "review_policy": {
+      "type": "object",
+      "required": [
+        "next_review_due"
+      ],
+      "properties": {
+        "next_review_due": {
+          "type": "string",
+          "format": "date"
+        },
+        "event_triggers": {
+          "type": "array"
+        }
+      }
+    },
+    "living_tracks": {
+      "type": "object",
+      "required": [
+        "ui",
+        "workflow"
+      ],
+      "properties": {
+        "ui": {
+          "type": "object"
+        },
+        "workflow": {
+          "type": "object"
+        }
+      }
+    },
+    "source_snapshot": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "decision_ledger_head": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

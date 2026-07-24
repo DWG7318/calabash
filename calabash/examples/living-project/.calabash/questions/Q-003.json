@@ -1,0 +1,61 @@
+{
+  "question_id": "Q-003",
+  "version": 1,
+  "theme_id": "THEME-003",
+  "decision_claim": "What fallback is authoritative when the primary tool is unavailable?",
+  "why_now": "The current workflow cannot execute reliably without a fallback",
+  "evidence_summary": "Historical document is stale and observed reality contradicts it.",
+  "source_references": [
+    "SRC-002",
+    "SRC-003"
+  ],
+  "choice_mode": "SINGLE",
+  "options": [
+    {
+      "option_id": "A",
+      "label": "Manual fallback",
+      "consequences": [
+        "Maintains continuity"
+      ],
+      "risks": [
+        "Adds human workload"
+      ]
+    },
+    {
+      "option_id": "B",
+      "label": "Block and retry later",
+      "consequences": [
+        "Preserves automation purity"
+      ],
+      "risks": [
+        "Stops service"
+      ]
+    },
+    {
+      "option_id": "D",
+      "label": "DEFER_AND_COLLECT_EVIDENCE",
+      "consequences": [
+        "Run controlled experiment first"
+      ],
+      "risks": [
+        "Delays definition"
+      ]
+    }
+  ],
+  "recommended_option_ids": [
+    "D"
+  ],
+  "recommendation_rationale": "Current evidence is contradictory and insufficient.",
+  "recommendation_confidence": 0.62,
+  "trade_offs": [
+    "Decision speed versus operational evidence"
+  ],
+  "affected_artifacts": [
+    "baseline/product-architecture.md",
+    "baseline/full/workflow.md"
+  ],
+  "follow_up_rules": [
+    "Collect two outage simulations"
+  ],
+  "status": "READY"
+}

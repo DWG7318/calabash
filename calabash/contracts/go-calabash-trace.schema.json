@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "go_id",
+    "go_version",
+    "baseline_id",
+    "baseline_version",
+    "baseline_hash",
+    "derived_outcome_claim",
+    "invalidation_rule"
+  ],
+  "properties": {
+    "go_id": {
+      "type": "string"
+    },
+    "go_version": {
+      "type": "string"
+    },
+    "baseline_id": {
+      "type": "string"
+    },
+    "baseline_version": {
+      "type": "string"
+    },
+    "baseline_hash": {
+      "type": "string"
+    },
+    "grandpa_references": {
+      "type": "array"
+    },
+    "product_architecture_references": {
+      "type": "array"
+    },
+    "ontology_references": {
+      "type": "array"
+    },
+    "full_layer_references": {
+      "type": "array"
+    },
+    "derived_outcome_claim": {
+      "type": "string"
+    },
+    "verification_implications": {
+      "type": "array"
+    },
+    "invalidation_rule": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "CURRENT",
+        "STALE",
+        "INVALID"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

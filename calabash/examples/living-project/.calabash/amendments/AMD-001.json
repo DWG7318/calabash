@@ -1,0 +1,28 @@
+{
+  "amendment_id": "AMD-001",
+  "baseline_id": "demo-product",
+  "from_version": "1.1.0",
+  "to_version": "1.2.0",
+  "trigger": "Owner decision Q-002 after UI evidence",
+  "source_ids": [
+    "SRC-002"
+  ],
+  "decision_ids": [
+    "DEC-002"
+  ],
+  "affected_parts": [
+    "Product Architecture",
+    "Ontology"
+  ],
+  "affected_theme_ids": [
+    "THEME-002"
+  ],
+  "affected_go_ids": [
+    "GO-01"
+  ],
+  "affected_edge_ids": [],
+  "summary": "Add guided first action and example result.",
+  "status": "ACCEPTED",
+  "created_at": "2026-07-12T12:00:00Z",
+  "git_commit": "abcdef1234567"
+}

@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Owner Decision Question",
+  "type": "object",
+  "required": [
+    "question_id",
+    "version",
+    "theme_id",
+    "decision_claim",
+    "choice_mode",
+    "options",
+    "recommended_option_ids",
+    "recommendation_rationale",
+    "recommendation_confidence",
+    "status"
+  ],
+  "properties": {
+    "question_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "theme_id": {
+      "type": "string"
+    },
+    "decision_claim": {
+      "type": "string"
+    },
+    "why_now": {
+      "type": "string"
+    },
+    "evidence_summary": {
+      "type": "string"
+    },
+    "source_references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "choice_mode": {
+      "enum": [
+        "SINGLE",
+        "MULTI"
+      ]
+    },
+    "options": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "option_id",
+          "label",
+          "consequences"
+        ],
+        "properties": {
+          "option_id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "consequences": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "risks": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "recommended_option_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommendation_rationale": {
+      "type": "string"
+    },
+    "recommendation_confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "trade_offs": {
+      "type": "array"
+    },
+    "affected_artifacts": {
+      "type": "array"
+    },
+    "follow_up_rules": {
+      "type": "array"
+    },
+    "status": {
+      "enum": [
+        "DRAFT",
+        "READY",
+        "ASKED",
+        "ANSWERED",
+        "SUPERSEDED",
+        "WITHDRAWN"
+      ]
+    },
+    "prototype_allowed": {
+      "type": "boolean"
+    },
+    "provisional_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

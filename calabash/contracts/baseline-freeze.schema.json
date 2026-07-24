@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Calabash Baseline Freeze",
+  "type": "object",
+  "required": [
+    "freeze_id",
+    "baseline_id",
+    "version",
+    "hash",
+    "git_commit",
+    "git_tag",
+    "source_snapshot",
+    "decision_ledger_head",
+    "frozen_at"
+  ],
+  "properties": {
+    "freeze_id": {
+      "type": "string"
+    },
+    "baseline_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "hash": {
+      "type": "string"
+    },
+    "git_commit": {
+      "type": "string"
+    },
+    "git_tag": {
+      "type": "string"
+    },
+    "source_snapshot": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "decision_ledger_head": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "known_gaps": {
+      "type": "array"
+    },
+    "review_policy": {
+      "type": "object"
+    },
+    "frozen_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": true
+}

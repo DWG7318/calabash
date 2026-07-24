@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<meta name='calabash-state-hash' content='sha256:f5e2842cabe7e0269529512ea17388007d744bc040470d89abe51600480b97e8'>
+<title>Calabash Definition Window — Demo Living Calabash</title>
+<style>
+:root{--bg:#f4f6f9;--panel:#fff;--ink:#1b2430;--muted:#697386;--line:#e4e8ef;--accent:#315efb;--danger:#b42318;--warn:#b54708;--ok:#027a48}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:13px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}
+.top{position:sticky;top:0;z-index:5;background:#101828;color:#fff;padding:12px 18px;box-shadow:0 2px 8px #0002}
+.top-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}h1{font-size:17px;margin:0;flex:1}.pill{border:1px solid #ffffff35;border-radius:999px;padding:4px 8px;font-weight:700}
+.now{display:grid;grid-template-columns:repeat(7,minmax(110px,1fr));gap:8px;margin-top:10px}.metric{background:#ffffff12;border-radius:8px;padding:7px 9px}.metric b{display:block;font-size:15px}.metric span{font-size:11px;color:#d0d5dd}
+.layout{display:grid;grid-template-columns:minmax(320px,1.15fr) minmax(300px,.85fr);gap:14px;padding:14px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;box-shadow:0 1px 3px #1018280a}h2{font-size:15px;margin:0 0 12px}h3{font-size:13px;margin:14px 0 6px}h4{font-size:13px;margin:5px 0}.muted{color:var(--muted)}
+.definition-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.section{border:1px solid var(--line);border-radius:9px;padding:10px}.section.wide{grid-column:1/-1}
+.kv{display:grid;grid-template-columns:115px 1fr;gap:8px;padding:5px 0;border-bottom:1px dashed var(--line)}.kv:last-child{border:0}.kv span{color:var(--muted)}
+.changes{display:flex;flex-direction:column;gap:8px;max-height:68vh;overflow:auto;padding-right:3px}.change{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:9px;padding:9px;background:#fbfcfe}.change-head{display:flex;justify-content:space-between;gap:8px;color:var(--muted);font-size:11px}.type{font-weight:800;color:var(--accent)}.change p{margin:4px 0}.tags{display:flex;gap:5px;flex-wrap:wrap}.tags span{background:#eef2ff;padding:2px 6px;border-radius:999px;font-size:10px}
+.details{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}table{width:100%;border-collapse:collapse}th,td{padding:7px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{font-size:11px;color:var(--muted)}details summary{cursor:pointer;color:var(--accent)}
+.connection{display:flex;align-items:center;gap:5px}.dot{width:8px;height:8px;border-radius:50%;background:#12b76a}.dot.bad{background:#f04438}
+footer{padding:8px 16px 18px;color:var(--muted);font-size:11px}
+@media(max-width:900px){.now{grid-template-columns:repeat(3,1fr)}.layout{grid-template-columns:1fr}.details{grid-template-columns:1fr}}
+@media(max-width:520px){.now{grid-template-columns:repeat(2,1fr)}.definition-grid{grid-template-columns:1fr}.section.wide{grid-column:auto}}
+</style></head><body>
+<header class='top'><div class='top-row'><h1>Calabash Definition Window — Demo Living Calabash</h1><span class='pill'>BLOCKED</span><span class='connection'><i id='dot' class='dot'></i><span id='connection'>current</span></span></div>
+<div class='now'>
+<div class='metric'><span>Baseline</span><b>MINIMUM v1.2.0</b></div>
+<div class='metric'><span>Completeness</span><b>66.7%</b></div>
+<div class='metric'><span>Blocking</span><b>1</b></div>
+<div class='metric'><span>Contradictions</span><b>1</b></div>
+<div class='metric'><span>UI / Workflow</span><b>1 / 1</b></div>
+<div class='metric'><span>Stale traces</span><b>0</b></div>
+<div class='metric'><span>Next review</span><b>2026-08-15</b></div>
+</div></header>
+<main class='layout'>
+<section class='panel'><h2>Current definition</h2><div class='definition-grid'>
+<div class='section wide'><h3>Grandpa</h3><div class='kv'><span>Purpose</span><strong>Help a user complete one reliable product journey</strong></div></div>
+<div class='section'><h3>Product Architecture</h3><div class='kv'><span>Roles</span><strong>Owner; End User</strong></div><div class='kv'><span>Entry Points</span><strong>—</strong></div><div class='kv'><span>Journeys</span><strong>Create; Review; Complete</strong></div><div class='kv'><span>Modules</span><strong>—</strong></div><div class='kv'><span>Outcomes</span><strong>—</strong></div></div>
+<div class='section'><h3>Ontology</h3><div class='kv'><span>Concepts</span><strong>User; Project; Result</strong></div><div class='kv'><span>Relationships</span><strong>—</strong></div><div class='kv'><span>States</span><strong>—</strong></div><div class='kv'><span>Open Conflicts</span><strong>—</strong></div></div>
+<div class='section'><h3>Full Calabash coverage</h3><p class='muted'>Minimum Calabash — Full layers not frozen.</p></div>
+<div class='section'><h3>Known gaps and upgrade triggers</h3><p><b>Gaps:</b> Formal policy layer not yet frozen</p><p><b>Triggers:</b> External side effects become material</p></div>
+</div></section>
+<section class='panel'><h2>Latest changes</h2><div class='changes'>
+        <article class='change'>
+          <div class='change-head'><span class='type'>BOOTSTRAP</span><time>2026-07-24T12:00:00Z</time></div>
+          <h4>Calabash desktop definition window initialized.</h4>
+          <p>Calabash 2.2.0 requires continuous visibility of current definition and latest semantic changes.</p>
+          <div class='tags'><span>Calabash BI</span></div>
+          <details><summary>Impact and provenance</summary>
+            <p><b>Impact:</b> Project definition is continuously visible during Loop work</p>
+            <p><b>Status:</b> ACCEPTED · <b>Commit:</b> pending</p>
+            <p><b>Actor:</b> Calabash Builder</p>
+          </details>
+        </article>
+        <article class='change'>
+          <div class='change-head'><span class='type'>UI_SIGNAL</span><time>2026-07-20T09:00:00Z</time></div>
+          <h4>Users confuse Draft and Result on the final screen.</h4>
+          <p>Current user observation shows that the implemented labels do not preserve the intended ontology distinction.</p>
+          <div class='tags'><span>Product Architecture</span><span>Ontology</span><span>Eval &amp; Audit</span></div>
+          <details><summary>Impact and provenance</summary>
+            <p><b>Impact:</b> UI labels require experiment; Result ontology may need clarification; GO-01 trace may become stale</p>
+            <p><b>Status:</b> EXPERIMENTAL · <b>Commit:</b> pending</p>
+            <p><b>Actor:</b> UI Observer</p>
+          </details>
+        </article>
+        <article class='change'>
+          <div class='change-head'><span class='type'>WORKFLOW_SIGNAL</span><time>2026-07-18T09:00:00Z</time></div>
+          <h4>Primary tool outage leaves no accepted fallback.</h4>
+          <p>Observed workflow reality contradicts the older no-fallback assumption.</p>
+          <div class='tags'><span>Product Architecture</span><span>Workflow</span><span>Action Catalog</span></div>
+          <details><summary>Impact and provenance</summary>
+            <p><b>Impact:</b> Q-003 blocks workflow definition; Future GO Verification must test fallback behavior</p>
+            <p><b>Status:</b> PROVISIONAL · <b>Commit:</b> pending</p>
+            <p><b>Actor:</b> Workflow Observer</p>
+          </details>
+        </article>
+        <article class='change'>
+          <div class='change-head'><span class='type'>AMENDMENT</span><time>2026-07-12T12:00:00Z</time></div>
+          <h4>Baseline v1.2.0 adopts guided first action and example result.</h4>
+          <p>Accepted amendment AMD-001 applies the provisional Owner decision to the current baseline.</p>
+          <div class='tags'><span>Product Architecture</span><span>Ontology</span></div>
+          <details><summary>Impact and provenance</summary>
+            <p><b>Impact:</b> GO-01 may require re-verification if Result meaning changes</p>
+            <p><b>Status:</b> ACCEPTED · <b>Commit:</b> abcdef1234567</p>
+            <p><b>Actor:</b> Calabash Builder</p>
+          </details>
+        </article>
+        <article class='change'>
+          <div class='change-head'><span class='type'>OWNER_DECISION</span><time>2026-07-12T11:00:00Z</time></div>
+          <h4>First use adds a guided first action and an example result.</h4>
+          <p>Owner selected the recommended multi-choice answer to reduce observed first-use abandonment.</p>
+          <div class='tags'><span>Product Architecture</span><span>Ontology</span></div>
+          <details><summary>Impact and provenance</summary>
+            <p><b>Impact:</b> UI onboarding prototype changes; GO-01 trace requires review after label experiment</p>
+            <p><b>Status:</b> PROVISIONAL · <b>Commit:</b> 2222222</p>
+            <p><b>Actor:</b> Owner</p>
+          </details>
+        </article>
+        <article class='change'>
+          <div class='change-head'><span class='type'>OWNER_DECISION</span><time>2026-07-10T10:00:00Z</time></div>
+          <h4>Owner retains final product approval authority.</h4>
+          <p>Owner answered Q-001 after review of product authority evidence.</p>
+          <div class='tags'><span>Grandpa</span><span>Product Architecture</span></div>
+          <details><summary>Impact and provenance</summary>
+            <p><b>Impact:</b> Final approval remains outside automated execution</p>
+            <p><b>Status:</b> ACCEPTED · <b>Commit:</b> 1111111</p>
+            <p><b>Actor:</b> Owner</p>
+          </details>
+        </article></div></section>
+<div class='details'>
+<section class='panel'><h2>Open Owner decisions</h2><table><thead><tr><th>ID</th><th>Decision</th><th>AI recommendation</th><th>Confidence</th></tr></thead><tbody><tr><td>Q-003</td><td>What fallback is authoritative when the primary tool is unavailable?</td><td>D</td><td>0.62</td></tr></tbody></table></section>
+<section class='panel'><h2>Theme completeness</h2><table><thead><tr><th>ID</th><th>Theme</th><th>Status</th><th>Resolved</th><th>%</th></tr></thead><tbody><tr><td>THEME-001</td><td>Final approval authority</td><td>DECIDED</td><td>1/1</td><td>100.0%</td></tr><tr><td>THEME-002</td><td>First-use UI journey</td><td>MONITORING</td><td>1/1</td><td>100.0%</td></tr><tr><td>THEME-003</td><td>Core workflow fallback</td><td>OPEN</td><td>0/1</td><td>0.0%</td></tr></tbody></table></section>
+<section class='panel'><h2>UI Reality</h2><table><thead><tr><th>ID</th><th>Severity</th><th>Finding</th><th>Affected</th></tr></thead><tbody><tr><td>UI-001</td><td>HIGH</td><td>Users confuse Draft and Result on the final screen.</td><td>Product Architecture; Ontology; Eval &amp; Audit</td></tr></tbody></table></section>
+<section class='panel'><h2>Core Workflow Reality</h2><table><thead><tr><th>ID</th><th>Severity</th><th>Finding</th><th>Affected</th></tr></thead><tbody><tr><td>WF-001</td><td>CRITICAL</td><td>Primary tool outage leaves no accepted fallback.</td><td>Product Architecture; Workflow; Action Catalog</td></tr></tbody></table></section>
+</div></main>
+<footer>State sha256:f5e2842cabe7e0269529512ea17388007d744bc040470d89abe51600480b97e8 · generated 2026-07-23T22:42:58.983506+00:00 · Git unavailable</footer>
+<script>
+const initialHash="sha256:f5e2842cabe7e0269529512ea17388007d744bc040470d89abe51600480b97e8";
+const refreshMs=5000;
+async function refreshCheck(){
+  const dot=document.getElementById('dot'), label=document.getElementById('connection');
+  if(location.protocol==='file:'){label.textContent='static';setTimeout(()=>location.reload(),refreshMs);return;}
+  try{const r=await fetch('/api/summary?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('status');const s=await r.json();dot.classList.remove('bad');label.textContent='current';if(s.state_hash!==initialHash)location.reload();}
+  catch(e){dot.classList.add('bad');label.textContent='disconnected';}
+  setTimeout(refreshCheck,refreshMs);
+}
+setTimeout(refreshCheck,refreshMs);
+</script></body></html>

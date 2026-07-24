@@ -1,0 +1,64 @@
+{
+  "question_id": "Q-002",
+  "version": 1,
+  "theme_id": "THEME-002",
+  "decision_claim": "Which first-use supports should be present?",
+  "why_now": "Observed abandonment on first use",
+  "evidence_summary": "UI observation shows users fail before first result.",
+  "source_references": [
+    "SRC-002"
+  ],
+  "choice_mode": "MULTI",
+  "options": [
+    {
+      "option_id": "A",
+      "label": "Guided first action",
+      "consequences": [
+        "Reduces ambiguity"
+      ],
+      "risks": [
+        "Adds UI guidance"
+      ]
+    },
+    {
+      "option_id": "B",
+      "label": "Example result",
+      "consequences": [
+        "Clarifies expected output"
+      ],
+      "risks": [
+        "May anchor users"
+      ]
+    },
+    {
+      "option_id": "C",
+      "label": "No guidance",
+      "consequences": [
+        "Simplest UI"
+      ],
+      "risks": [
+        "Preserves observed failure"
+      ]
+    }
+  ],
+  "recommended_option_ids": [
+    "A",
+    "B"
+  ],
+  "recommendation_rationale": "Both address different observed gaps.",
+  "recommendation_confidence": 0.86,
+  "trade_offs": [
+    "Guidance versus visual simplicity"
+  ],
+  "affected_artifacts": [
+    "baseline/product-architecture.md"
+  ],
+  "follow_up_rules": [
+    "Observe first-run completion after release"
+  ],
+  "status": "ANSWERED",
+  "prototype_allowed": true,
+  "provisional_conditions": [
+    "Observe first-run completion after release"
+  ]
+}

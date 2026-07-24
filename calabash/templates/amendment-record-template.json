@@ -1,0 +1,17 @@
+{
+  "amendment_id": "AMD-XXX",
+  "baseline_id": "",
+  "from_version": "",
+  "to_version": "",
+  "trigger": "",
+  "source_ids": [],
+  "decision_ids": [],
+  "affected_parts": [],
+  "affected_theme_ids": [],
+  "affected_go_ids": [],
+  "affected_edge_ids": [],
+  "summary": "",
+  "status": "PROPOSED",
+  "created_at": "2026-01-01T00:00:00Z",
+  "git_commit": "0000000"
+}

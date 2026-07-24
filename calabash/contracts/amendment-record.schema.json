@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Calabash Amendment Record",
+  "type": "object",
+  "required": [
+    "amendment_id",
+    "baseline_id",
+    "from_version",
+    "to_version",
+    "trigger",
+    "affected_parts",
+    "status",
+    "created_at",
+    "git_commit"
+  ],
+  "properties": {
+    "amendment_id": {
+      "type": "string"
+    },
+    "baseline_id": {
+      "type": "string"
+    },
+    "from_version": {
+      "type": "string"
+    },
+    "to_version": {
+      "type": "string"
+    },
+    "trigger": {
+      "type": "string"
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "decision_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "affected_parts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "affected_theme_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "affected_go_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "affected_edge_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "summary": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "PROPOSED",
+        "REVIEWED",
+        "ACCEPTED",
+        "REJECTED",
+        "SUPERSEDED"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "git_commit": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,97 @@
+{
+  "themes": [
+    {
+      "theme_id": "THEME-001",
+      "title": "Final approval authority",
+      "related_parts": [
+        "Grandpa",
+        "Product Architecture"
+      ],
+      "criticality": "CRITICAL",
+      "blocking": false,
+      "status": "DECIDED",
+      "living_track": "NONE",
+      "question_ids": [
+        "Q-001"
+      ],
+      "claims": [
+        {
+          "claim_id": "CL-001",
+          "text": "Owner retains final product approval",
+          "required": true,
+          "status": "DECIDED",
+          "source_ids": [
+            "SRC-001"
+          ],
+          "decision_ids": [
+            "DEC-001"
+          ]
+        }
+      ]
+    },
+    {
+      "theme_id": "THEME-002",
+      "title": "First-use UI journey",
+      "related_parts": [
+        "Product Architecture",
+        "Ontology"
+      ],
+      "criticality": "HIGH",
+      "blocking": false,
+      "status": "MONITORING",
+      "living_track": "UI",
+      "question_ids": [
+        "Q-002"
+      ],
+      "claims": [
+        {
+          "claim_id": "CL-002",
+          "text": "First-time users need a guided first action",
+          "required": true,
+          "status": "DECIDED",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "decision_ids": [
+            "DEC-002"
+          ]
+        },
+        {
+          "claim_id": "CL-004",
+          "text": "Monitor whether users understand Result vs Draft",
+          "required": false,
+          "status": "MONITORING",
+          "source_ids": [
+            "SRC-002"
+          ],
+          "decision_ids": []
+        }
+      ]
+    },
+    {
+      "theme_id": "THEME-003",
+      "title": "Core workflow fallback",
+      "related_parts": [
+        "Product Architecture",
+        "Workflow"
+      ],
+      "criticality": "HIGH",
+      "blocking": true,
+      "status": "OPEN",
+      "living_track": "WORKFLOW",
+      "question_ids": [
+        "Q-003"
+      ],
+      "claims": [
+        {
+          "claim_id": "CL-005",
+          "text": "Define fallback when primary tool is unavailable",
+          "required": true,
+          "status": "OPEN",
+          "source_ids": [],
+          "decision_ids": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "bootstrap_id": "BI-BOOTSTRAP-20260723-224241",
+  "project_name": "Demo Living Calabash",
+  "project_root": "/mnt/data/calabash-2.2.0-candidate/calabash/examples/living-project",
+  "created_at": "2026-07-23T22:42:41.904288+00:00",
+  "status": "CALABASH_BI_BOOTSTRAP_PASS",
+  "presentation_mode": "COMPACT_WINDOW",
+  "config_path": ".calabash/bi/config.json",
+  "summary_path": ".calabash/bi/summary.json",
+  "compact_path": ".calabash/bi/compact.html",
+  "dashboard_path": ".calabash/bi/dashboard.html",
+  "change_feed_path": ".calabash/bi/change-feed.jsonl",
+  "launchers": [
+    ".calabash/bi/launch-calabash-bi.sh",
+    ".calabash/bi/launch-calabash-bi.command",
+    ".calabash/bi/launch-calabash-bi.ps1",
+    ".calabash/bi/launch-calabash-bi.cmd"
+  ],
+  "local_only": true,
+  "read_only": true,
+  "refresh_seconds": 5,
+  "visibility_gate": "REQUIRED_WHILE_ACTIVE",
+  "state_hash": "sha256:f5e2842cabe7e0269529512ea17388007d744bc040470d89abe51600480b97e8",
+  "headless_reason": null,
+  "git_commit": null
+}

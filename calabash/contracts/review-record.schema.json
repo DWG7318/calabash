@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Calabash Review Record",
+  "type": "object",
+  "required": [
+    "review_id",
+    "baseline_id",
+    "baseline_version",
+    "type",
+    "trigger",
+    "reviewed_at",
+    "verdict",
+    "next_review_due"
+  ],
+  "properties": {
+    "review_id": {
+      "type": "string"
+    },
+    "baseline_id": {
+      "type": "string"
+    },
+    "baseline_version": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "HEALTH",
+        "THEME",
+        "FULL"
+      ]
+    },
+    "trigger": {
+      "type": "string"
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "scope": {
+      "type": "array"
+    },
+    "sources_rechecked": {
+      "type": "array"
+    },
+    "themes_reviewed": {
+      "type": "array"
+    },
+    "ui_signals": {
+      "type": "array"
+    },
+    "workflow_signals": {
+      "type": "array"
+    },
+    "contradictions": {
+      "type": "array"
+    },
+    "trace_impact": {
+      "type": "array"
+    },
+    "verdict": {
+      "enum": [
+        "UNCHANGED",
+        "CLARIFICATION_REQUIRED",
+        "AMENDMENT_REQUIRED",
+        "MINIMUM_TO_FULL_UPGRADE_REQUIRED",
+        "CALABASH_DEFINITION_BLOCKED"
+      ]
+    },
+    "actions": {
+      "type": "array"
+    },
+    "next_review_due": {
+      "type": "string",
+      "format": "date"
+    },
+    "git_commit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

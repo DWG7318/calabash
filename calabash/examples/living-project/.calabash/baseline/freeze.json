@@ -1,0 +1,21 @@
+{
+  "freeze_id": "FREEZE-001",
+  "baseline_id": "demo-product",
+  "version": "1.2.0",
+  "hash": "sha256:demo12345678",
+  "git_commit": "abcdef1234567",
+  "git_tag": "calabash/demo-product/v1.2.0",
+  "source_snapshot": [
+    "SRC-001",
+    "SRC-002",
+    "SRC-003"
+  ],
+  "decision_ledger_head": "DEC-002",
+  "known_gaps": [
+    "Workflow fallback unresolved"
+  ],
+  "review_policy": {
+    "next_review_due": "2026-08-15"
+  },
+  "frozen_at": "2026-07-12T12:00:00Z"
+}
